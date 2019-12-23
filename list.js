@@ -1,6 +1,10 @@
 var todos = [];
-
 var input = prompt("What would you like to do?")
+var firstLI = document.querySelector("li");
+
+firstLI.addEventListener("mouseover", function(){
+    console.log("MOUSE OVER!");
+})
 
 while(input !== "quit") {
     if(input === "list") {
